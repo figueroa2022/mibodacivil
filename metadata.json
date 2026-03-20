@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Amorea Crea - Wedding Invitations",
+  "description": "Create and customize your own digital wedding invitations with elegant designs, countdowns, and maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
