@@ -17,7 +17,7 @@ export interface InvitationData {
 export const defaultInvitation: InvitationData = {
   partner1: "Anderson",
   partner2: "Valentina",
-  date: "2026-05-02",
+  date: "2026-05-02T10:00:00",
   time: "10:00 AM",
   venue: "Notaría Única, San Vicente del Caguán",
   address: "Carrera 3 # 2-67",
@@ -27,5 +27,5 @@ export const defaultInvitation: InvitationData = {
   rsvpDeadline: "2026-04-02",
   themeColor: "#fdfcf0",
   accentColor: "#b8860b",
-  musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  musicUrl: "/musica.mp3",
 };

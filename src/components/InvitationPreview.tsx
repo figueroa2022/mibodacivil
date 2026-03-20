@@ -2,19 +2,19 @@ import { motion } from 'motion/react';
 import { Calendar, MapPin, Clock, Heart, GlassWater } from 'lucide-react';
 import { InvitationData } from '../types';
 import Countdown from './Countdown';
-import MusicPlayer from './MusicPlayer';
 
 interface InvitationPreviewProps {
   data: InvitationData;
 }
 
 export default function InvitationPreview({ data }: InvitationPreviewProps) {
-  const formattedDate = new Date(data.date).toLocaleDateString('es-ES', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const dateObj = new Date(data.date);
+  const weekday = dateObj.toLocaleDateString('es-ES', { weekday: 'long' });
+  const day = dateObj.getDate();
+  const month = dateObj.toLocaleDateString('es-ES', { month: 'long' });
+  const year = dateObj.getFullYear();
+  
+  const formattedDate = `${weekday} ${day} de ${month} del ${year}`;
 
   return (
     <div 
@@ -96,9 +96,6 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
 
         <div className="absolute bottom-0 left-0 w-full h-2 bg-stone-800/10" />
       </motion.div>
-
-      {/* Music Player */}
-      {data.musicUrl && <MusicPlayer url={data.musicUrl} />}
     </div>
   );
 }

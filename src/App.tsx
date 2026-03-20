@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import InvitationPreview from './components/InvitationPreview';
+import MusicPlayer from './components/MusicPlayer';
 import { defaultInvitation, InvitationData } from './types';
 
 export default function App() {
@@ -12,6 +13,14 @@ export default function App() {
           <InvitationPreview data={invitationData} />
         </div>
       </main>
+      
+      {/* Music Player at root to avoid clipping */}
+      {invitationData.musicUrl && (
+        <MusicPlayer 
+          url={invitationData.musicUrl} 
+          accentColor={invitationData.accentColor} 
+        />
+      )}
     </div>
   );
 }
