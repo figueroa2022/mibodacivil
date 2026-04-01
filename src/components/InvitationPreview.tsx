@@ -80,7 +80,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
           <div className="w-full space-y-12">
             <div className="text-center">
               <MapPin className="w-5 h-5 mb-2 mx-auto" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Lugar de la ceremonia civil</p>
+              <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Lugar de la boda civil</p>
               <p className="font-serif text-stone-900 text-lg mb-1">{data.venue}</p>
               <p className="font-serif text-stone-600 italic">{data.address}</p>
             </div>
