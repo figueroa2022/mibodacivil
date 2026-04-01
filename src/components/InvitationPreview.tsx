@@ -90,11 +90,11 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
               <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Recepción</p>
               <p className="font-serif text-stone-900 text-lg">Restaurante Gastro Bar Amsterdam</p>
                 <p className="font-serif text-stone-600 italic">Antigua Zona Rosa Via al Aeropuerto TV 8A Este 2-40-44</p>
-                          <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
               <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">HORA DEL ALMUERZO</span>
-              <span className="font-serif text-stone-900">{data.time_r}</span>
-            </div>
+              <span className="font-serif text-stone-900">12:00 PM</span>
+              </div>
           </div>
               <p className="font-serif text-stone-600 italic mt-2">¡Te esperamos para celebrar!</p>
             </div>
