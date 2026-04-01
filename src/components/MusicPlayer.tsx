@@ -75,7 +75,7 @@ export default function MusicPlayer({ url, accentColor }: MusicPlayerProps) {
                 exit={{ opacity: 0, scale: 0.5 }}
               >
             
-                <Pause className="w-5 h-5" style={{ color: accentColor, fill: accentColor }}/>
+                <Pause className="w-5 h-5 text-stone-800 fill-stone-800" style={{ color: accentColor, fill: accentColor }}/>
               </motion.div>
             ) : (
               <motion.div
@@ -84,7 +84,7 @@ export default function MusicPlayer({ url, accentColor }: MusicPlayerProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
               >
-                <Play className="w-5 h-5 ml-1" style={{ color: accentColor, fill: accentColor }}/>
+                <Play className="w-5 h-5 text-stone-800 fill-stone-800 ml-1" style={{ color: accentColor, fill: accentColor }}/>
               </motion.div>
             )}
           </AnimatePresence>
