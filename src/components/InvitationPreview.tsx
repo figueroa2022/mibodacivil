@@ -88,7 +88,8 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
             <div className="text-center">
               <GlassWater className="w-5 h-5 mb-2 mx-auto" style={{ color: data.accentColor }} strokeWidth={1.5} />
               <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Recepción</p>
-              <p className="font-serif text-stone-900 text-lg">SANVIRULO</p>
+              <p className="font-serif text-stone-900 text-lg">Restaurante Gastro Bar Amsterdam</p>
+                <p className="font-serif text-stone-600 italic">Antigua Zona Rosa Via al Aeropuerto TV 8A Este 2-40-44</p>
               <p className="font-serif text-stone-600 italic mt-2">¡Te esperamos para celebrar!</p>
             </div>
           </div>
