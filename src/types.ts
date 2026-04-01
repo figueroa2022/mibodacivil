@@ -3,6 +3,7 @@ export interface InvitationData {
   partner2: string;
   date: string;
   time: string;
+  time_r: string;
   venue: string;
   address: string;
   lat: number;
@@ -19,6 +20,7 @@ export const defaultInvitation: InvitationData = {
   partner2: "Valentina",
   date: "2026-05-02T10:00:00",
   time: "10:00 AM",
+  time_r: "12:00 PM",
   venue: "Notaría Única, San Vicente del Caguán",
   address: "Carrera 3 # 2-67",
   lat: 2.1154,
