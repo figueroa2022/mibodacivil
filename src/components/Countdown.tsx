@@ -53,7 +53,7 @@ function TimeUnit({ value, label, accentColor }: { value: number; label: string;
       >
         {value.toString().padStart(2, '0')}
       </span>
-      <span className="text-[10px] uppercase tracking-widest text-stone-400 mt-1">{label}</span>
+      <span className="text-[10px] uppercase tracking-widest text-black mt-1">{label}</span>
     </div>
   );
 }
