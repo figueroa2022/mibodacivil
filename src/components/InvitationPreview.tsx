@@ -96,7 +96,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
              <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
               <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">Hora del Almuerzo</span>
-              <span className="font-serif text-stone-900">12:00 PM</span>
+              <span className="font-serif text-stone-900">12:30 PM</span>
               </div>
  <div className="text-center">
              <p className="font-serif text-stone-600 italic mt-2">¡Te esperamos para celebrar!</p>
