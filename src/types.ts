@@ -29,5 +29,5 @@ export const defaultInvitation: InvitationData = {
   themeColor: "#fdfcf0",
   accentColor: "#b8860b",
   musicUrl: "/musica.mp3",
-  backgroundImage: "/mano3.jpeg",
+  backgroundImage: "/mano4.jpeg",
 };
