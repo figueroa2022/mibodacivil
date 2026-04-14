@@ -59,7 +59,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
 
           <div className="w-16 h-px my-8" />
 
-          <p className="font-serif text-lg md:text-xl text-stone-600 italic max-w-md mb-8 leading-relaxed">
+          <p className="font-serif text-lg md:text-xl text-black italic max-w-md mb-8 leading-relaxed">
             "{data.message}"
           </p>
 
@@ -68,12 +68,12 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-12 mt-8">
             <div className="flex flex-col items-center">
               <Calendar className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">Fecha</span>
+              <span className="text-xs uppercase tracking-widest text-black mb-1">Fecha</span>
               <span className="font-serif text-stone-900">{formattedDate}</span>
             </div>
             <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">Hora</span>
+              <span className="text-xs uppercase tracking-widest text-black mb-1">Hora</span>
               <span className="font-serif text-stone-900">{data.time}</span>
             </div>
           </div>
@@ -81,21 +81,21 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
           <div className="w-full space-y-12">
             <div className="text-center">
               <MapPin className="w-5 h-5 mb-2 mx-auto" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Lugar de la boda civil</p>
+              <p className="text-xs uppercase tracking-widest text-black mb-1">Lugar de la boda civil</p>
               <p className="font-serif text-stone-900 text-lg mb-1">{data.venue}</p>
               <p className="font-serif text-stone-600 italic">{data.address}</p>
             </div>
 
             <div className="text-center">
               <GlassWater className="w-5 h-5 mb-2 mx-auto" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Recepción</p>
+              <p className="text-xs uppercase tracking-widest text-black mb-1">Recepción</p>
               <p className="font-serif text-stone-900 text-lg">Restaurante Gastro Bar Amsterdam</p>
               <p className="font-serif text-stone-600 italic">Antigua Zona Rosa Via al Aeropuerto TV 8A Este 2-40-44</p>
             </div>
 
             <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
-              <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">Hora del Almuerzo</span>
+              <span className="text-xs uppercase tracking-widest text-black mb-1">Hora del Almuerzo</span>
               <span className="font-serif text-stone-900">12:30 PM</span>
             </div>
 
