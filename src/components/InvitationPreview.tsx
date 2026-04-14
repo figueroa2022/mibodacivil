@@ -17,12 +17,9 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
   const formattedDate = `${weekday} ${day} de ${month} del ${year}`;
 
   return (
-    <div 
+      <div 
       className="min-h-screen w-full flex items-center justify-center p-4 md:p-8"
-      style={{ 
-        background: `radial-gradient(circle at center, #ffffff 0%, ${data.themeColor} 100%)`,
-        backgroundColor: data.themeColor 
-      }}
+      style={{ backgroundColor: data.themeColor }}
     >
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -30,7 +27,10 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
         transition={{ duration: 0.8 }}
         className="max-w-2xl w-full shadow-2xl rounded-[2rem] overflow-hidden border border-black/5 flex flex-col items-center text-center relative bg-cover bg-center"
         style={{ backgroundImage: `url(${data.backgroundImage})` }}
-        >
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-[1px]" />
+        
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-2 bg-stone-800/10" />
         
