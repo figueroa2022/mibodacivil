@@ -57,13 +57,13 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
             {data.partner2}
           </h1>
 
-          <div className="w-16 h-px my-8" style={{ backgroundColor: data.accentColor }} />
+          <div className="w-16 h-px my-8" />
 
           <p className="font-serif text-lg md:text-xl text-stone-600 italic max-w-md mb-8 leading-relaxed">
             "{data.message}"
           </p>
 
-          <Countdown targetDate={data.date} accentColor={data.accentColor} />
+          <Countdown targetDate={data.date} />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-12 mt-8">
             <div className="flex flex-col items-center">
