@@ -29,7 +29,8 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="max-w-2xl w-full bg-white shadow-2xl rounded-[2rem] overflow-hidden border border-black/5 flex flex-col items-center text-center relative"
-      >
+        style={{ backgroundImage: `url(${data.backgroundImage})` }}
+        >
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-2 bg-stone-800/10" />
         
