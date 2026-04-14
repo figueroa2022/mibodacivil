@@ -69,7 +69,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
             <div className="flex flex-col items-center">
               <Calendar className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
               <span className="text-xs uppercase tracking-widest text-black mb-1">Fecha</span>
-              <span className="font-serif text-stone-900">{formattedDate}</span>
+              <span className="font-serif text-black">{formattedDate}</span>
             </div>
             <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
