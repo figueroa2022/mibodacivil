@@ -29,7 +29,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
         style={{ backgroundImage: `url(${data.backgroundImage})` }}
       >
         {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-white/85 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
         
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-2 bg-stone-800/10 z-10" />
