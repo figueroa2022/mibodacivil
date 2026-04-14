@@ -12,6 +12,7 @@ export interface InvitationData {
   themeColor: string;
   accentColor: string;
   musicUrl: string;
+  backgroundImage: string;
 }
 
 export const defaultInvitation: InvitationData = {
