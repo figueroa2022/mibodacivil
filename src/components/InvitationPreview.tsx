@@ -17,7 +17,7 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
   const formattedDate = `${weekday} ${day} de ${month} del ${year}`;
 
   return (
-      <div 
+       <div 
       className="min-h-screen w-full flex items-center justify-center p-4 md:p-8"
       style={{ backgroundColor: data.themeColor }}
     >
@@ -29,12 +29,12 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
         style={{ backgroundImage: `url(${data.backgroundImage})` }}
       >
         {/* Overlay for readability */}
- 
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-[1px]" />
         
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-stone-800/10" />
+        <div className="absolute top-0 left-0 w-full h-2 bg-stone-800/10 z-10" />
         
-        <div className="p-8 md:p-16 flex flex-col items-center w-full">
+        <div className="p-8 md:p-16 flex flex-col items-center w-full relative z-10">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -91,17 +91,17 @@ export default function InvitationPreview({ data }: InvitationPreviewProps) {
               <p className="text-xs uppercase tracking-widest text-stone-500 mb-1">Recepción</p>
               <p className="font-serif text-stone-900 text-lg">Restaurante Gastro Bar Amsterdam</p>
               <p className="font-serif text-stone-600 italic">Antigua Zona Rosa Via al Aeropuerto TV 8A Este 2-40-44</p>
-             
-             
             </div>
-             <div className="flex flex-col items-center">
+
+            <div className="flex flex-col items-center">
               <Clock className="w-5 h-5 mb-2" style={{ color: data.accentColor }} strokeWidth={1.5} />
               <span className="text-xs uppercase tracking-widest text-stone-500 mb-1">Hora del Almuerzo</span>
               <span className="font-serif text-stone-900">12:30 PM</span>
-              </div>
- <div className="text-center">
-             <p className="font-serif text-stone-600 italic mt-2">¡Te esperamos para celebrar!</p>
-         </div>
+            </div>
+
+            <div className="text-center">
+              <p className="font-serif text-stone-600 italic mt-2">¡Te esperamos para celebrar!</p>
+            </div>
           </div>
         </div>
 
